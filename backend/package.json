@@ -1,0 +1,50 @@
+{
+  "name": "bloodbridge-backend",
+  "version": "1.0.0",
+  "description": "BloodBridge Backend Service - Healthcare & Blockchain Verification REST API",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "migrate": "ts-node src/db/migrate.ts",
+    "seed": "ts-node src/db/seed.ts",
+    "test": "..\\contracts\\node_modules\\.bin\\mocha.cmd --require ts-node/register/transpile-only --require tests/setup.ts --extension ts --timeout 30000 --exit \"tests/**/*.test.ts\""
+  },
+  "keywords": [
+    "bloodbridge",
+    "healthcare",
+    "express",
+    "typescript",
+    "postgresql",
+    "blockchain"
+  ],
+  "author": "BloodBridge Team",
+  "license": "MIT",
+  "dependencies": {
+    "@electric-sql/pglite": "^0.2.16",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.5",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.8",
+    "@types/node": "^20.14.0",
+    "@types/pg": "^8.11.11",
+    "@types/supertest": "^6.0.2",
+    "supertest": "^7.0.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "~5.6.3",
+    "vitest": "^2.1.8"
+  }
+}
