@@ -1,9 +1,5 @@
 # BloodBridge: A Smart Blockchain Network to Reduce Blood Shortage
 
-[![Solidity Contracts](https://img.shields.io/badge/Solidity-0.8.28-363636.svg)](contracts/)
-[![Hardhat Tests](https://img.shields.io/badge/Hardhat%20Tests-34%20Passing-brightgreen.svg)](contracts/)
-[![Backend Tests](https://img.shields.io/badge/Backend%20Tests-44%20Passing-brightgreen.svg)](backend/)
-[![Frontend](https://img.shields.io/badge/Frontend-React%2018%20%7C%20Vite%20%7C%20Tailwind-blue.svg)](frontend/)
 
 **BloodBridge** is a decentralized healthcare logistics and cryptographic integrity platform designed to eliminate emergency blood shortages, prevent data counterfeiting, and provide real-time, explainable matching between trauma wards, blood banks, and voluntary donors.
 
