@@ -7,7 +7,7 @@
 
 **BloodBridge** is a decentralized healthcare logistics and cryptographic integrity platform designed to eliminate emergency blood shortages, prevent data counterfeiting, and provide real-time, explainable matching between trauma wards, blood banks, and voluntary donors.
 
-Developed as a **B.Tech Capstone Project** on Windows using Google Antigravity.
+Developed as a B.Tech capstone project to demonstrate blockchain-based blood inventory coordination, emergency request management, and tamper-evident audit logging.
 
 ---
 
