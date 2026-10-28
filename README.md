@@ -75,7 +75,6 @@ Copy `backend/.env.example` to `backend/.env` and review the local development s
 cd contracts
 npx hardhat test
 ```
-*Expected: 34 passing contract tests.*
 
 To use the local blockchain integration, start a Hardhat node in a separate terminal (`cd contracts` then `npm run node`) and deploy the contracts using the project's deployment workflow. Local contract addresses can change after redeployment; update `backend/.env` accordingly. The frontend/backend demo can use embedded PGlite for local storage, but blockchain-backed features require the local chain and deployed contracts to be available.
 
@@ -85,7 +84,6 @@ cd backend
 npm test
 npm run dev
 ```
-*Expected: 34 passing backend & e2e integration tests. Server starts on `http://localhost:5000`.*
 
 ### 3. Frontend Web Application
 ```powershell
