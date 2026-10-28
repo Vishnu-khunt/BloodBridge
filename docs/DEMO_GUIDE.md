@@ -129,16 +129,3 @@ The UI includes a persistent **Guided Demo Tour** banner at the top of the scree
 
 ---
 
-## 4. Key Questions College Evaluators Ask (and Answers)
-
-### Q1: Why not put all donor details on the blockchain?
-> **Answer**: BloodBridge enforces strict medical privacy (HIPAA / GDPR compliance principles). Writing personal donor identities, blood types, or medical histories to a public ledger is a severe privacy violation and cannot be deleted due to blockchain immutability. BloodBridge stores only **cryptographic pseudonymized hashes and batch audit anchors** on-chain, keeping sensitive records in an encrypted, access-controlled database.
-
-### Q2: What happens if an organization is compromised?
-> **Answer**: The administrator can immediately invoke `revokeOrganization()` in `BloodBridgeRegistry.sol`. The smart contract prevents revoked addresses from allocating inventory or creating emergency requests on-chain, while the security engine flags any subsequent attempts as a Rule 3 critical incident.
-
-### Q3: How is plasma matching different from red blood cell matching?
-> **Answer**: Red blood cells and plasma have inverted compatibility rules:
-> - For Red Blood Cells: **O- is the universal donor**, and **AB+ is the universal recipient**.
-> - For Plasma: **AB is the universal donor** (no anti-A or anti-B antibodies), while **O is the universal recipient**.
-> BloodBridge's matching engine dynamically inverts the compatibility matrix based on `component_type`.
